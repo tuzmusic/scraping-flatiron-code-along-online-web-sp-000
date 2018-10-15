@@ -13,7 +13,8 @@ class Scraper
   end
 
   def get_courses
-    get_page.css('.post').each { |post|
+    courses = get_page.css('.post')
+    courses.each { |post|
       course = Course.new
       course.title = post.css('h2').text
       course.schedule = post.css('.date').text
