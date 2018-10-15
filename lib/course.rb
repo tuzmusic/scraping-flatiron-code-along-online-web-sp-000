@@ -6,7 +6,7 @@ class Course
     @@all << self
   end
 
-  @@all
+  @@all = []
 
   def self.all
     @@all
