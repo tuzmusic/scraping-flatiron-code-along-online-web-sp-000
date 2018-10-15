@@ -10,7 +10,7 @@ class Scraper
   end
 
   def get_courses
-    @coursesXML = @doc.css(.post)
+    @coursesXML = @doc.css('.post')
   end
 
   def print_courses
