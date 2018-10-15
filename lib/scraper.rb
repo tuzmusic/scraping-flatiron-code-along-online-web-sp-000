@@ -11,6 +11,7 @@ class Scraper
   end
 
   def get_courses
+    binding.pry
     @coursesXML = @doc.css('.post')
   end
 
