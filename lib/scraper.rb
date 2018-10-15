@@ -18,12 +18,11 @@ class Scraper
       course.description = post.css('p').text
     }
     @doc
-    # binding.pry
+
   end
 
   def get_courses
-    # binding.pry
-    @coursesXML = @doc.css('.post')
+
   end
 
   def print_courses
